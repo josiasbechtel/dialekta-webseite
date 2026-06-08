@@ -8,24 +8,32 @@ import { Icon } from '@/components/icons'
 type HeroVisual = 'home' | 'school' | 'phone' | 'helpers' | 'analysis' | 'about' | 'faq'
 type Point = [number, number]
 
+type NetworkStyle = CSSProperties & {
+  '--mx'?: number
+  '--my'?: number
+  '--dx'?: string
+  '--dy'?: string
+  '--delay'?: string
+}
+
 const visualPoints: Record<HeroVisual, Point[]> = {
-  home: [[20,22],[34,18],[50,24],[65,16],[78,28],[28,48],[45,44],[60,52],[74,46],[36,72],[54,74],[70,68]],
-  school: [[30,28],[48,18],[66,28],[24,44],[48,44],[72,44],[30,64],[48,76],[66,64]],
-  phone: [[36,16],[64,16],[72,30],[72,70],[64,84],[36,84],[28,70],[28,30],[50,28],[50,72],[40,76],[60,76]],
-  helpers: [[24,24],[44,24],[64,24],[76,36],[24,48],[44,48],[64,48],[76,60],[24,72],[44,72],[64,72]],
-  analysis: [[50,12],[66,24],[76,42],[70,64],[50,80],[30,64],[24,42],[34,24],[50,42],[50,58]],
-  about: [[32,25],[50,18],[68,25],[28,52],[50,44],[72,52],[38,75],[62,75]],
-  faq: [[28,26],[46,16],[64,26],[72,48],[58,66],[48,80],[38,66],[54,48]],
+  home: [[14,28],[23,18],[35,22],[47,14],[59,21],[72,16],[84,28],[18,46],[31,39],[43,45],[55,38],[68,45],[80,40],[24,65],[38,58],[51,66],[63,58],[76,67],[33,82],[49,78],[66,83]],
+  school: [[28,22],[43,13],[59,18],[72,31],[21,39],[39,36],[56,41],[76,48],[28,58],[46,54],[62,61],[72,73],[38,82],[55,78]],
+  phone: [[38,10],[62,10],[74,20],[79,38],[78,60],[70,78],[56,88],[40,88],[28,78],[20,60],[19,38],[26,20],[38,28],[62,28],[64,70],[36,70],[50,43],[50,57],[43,78],[57,78]],
+  helpers: [[17,22],[31,17],[45,22],[59,17],[73,23],[25,38],[39,34],[53,39],[67,35],[81,43],[18,57],[33,53],[47,59],[61,54],[76,61],[26,76],[43,72],[59,78],[72,73]],
+  analysis: [[50,10],[65,19],[78,35],[82,52],[70,70],[52,84],[33,75],[20,55],[24,36],[35,20],[48,35],[62,42],[56,60],[40,58],[45,48],[68,55],[31,45]],
+  about: [[27,25],[42,16],[58,16],[73,25],[22,49],[38,43],[50,35],[62,43],[78,49],[31,70],[50,78],[69,70],[50,54]],
+  faq: [[27,27],[43,16],[62,20],[75,36],[72,56],[58,70],[45,82],[31,68],[22,50],[50,42],[60,52],[43,57]],
 }
 
 const visualLines: Record<HeroVisual, [number, number][]> = {
-  home: [[0,1],[1,2],[2,3],[3,4],[0,5],[5,6],[6,7],[7,8],[2,6],[3,7],[5,9],[9,10],[10,11],[8,11]],
-  school: [[0,1],[1,2],[3,4],[4,5],[6,7],[7,8],[0,3],[3,6],[1,4],[4,7],[2,5],[5,8]],
-  phone: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,0],[8,9],[10,11]],
-  helpers: [[0,1],[1,2],[2,3],[4,5],[5,6],[6,7],[8,9],[9,10],[0,4],[4,8],[1,5],[5,9],[2,6],[6,10],[3,7]],
-  analysis: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,0],[8,9],[1,8],[3,9],[5,9],[7,8]],
-  about: [[0,1],[1,2],[0,3],[3,4],[4,5],[5,2],[3,6],[6,7],[7,5],[1,4]],
-  faq: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,0],[2,7],[7,4]],
+  home: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[0,7],[7,8],[8,9],[9,10],[10,11],[11,12],[2,8],[4,10],[6,12],[7,13],[13,14],[14,15],[15,16],[16,17],[8,14],[10,15],[11,16],[13,18],[18,19],[19,20],[17,20],[15,19]],
+  school: [[0,1],[1,2],[2,3],[0,4],[4,5],[5,6],[6,7],[1,5],[2,6],[4,8],[8,9],[9,10],[10,11],[5,9],[6,10],[8,12],[12,13],[10,13],[11,13]],
+  phone: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,0],[12,13],[13,16],[16,17],[17,15],[15,12],[14,15],[3,14],[4,14],[18,19],[15,18],[14,19]],
+  helpers: [[0,1],[1,2],[2,3],[3,4],[0,5],[5,6],[6,7],[7,8],[8,9],[5,10],[10,11],[11,12],[12,13],[13,14],[10,15],[15,16],[16,17],[17,18],[1,6],[2,7],[3,8],[6,11],[7,12],[8,13],[11,16],[12,17],[13,18]],
+  analysis: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,0],[10,11],[11,15],[15,12],[12,13],[13,16],[16,14],[14,10],[1,10],[2,11],[4,12],[6,13],[8,16]],
+  about: [[0,1],[1,2],[2,3],[0,4],[4,5],[5,6],[6,7],[7,8],[8,3],[4,9],[9,10],[10,11],[11,8],[6,12],[12,10],[5,12],[7,12]],
+  faq: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,0],[1,9],[9,10],[10,5],[9,11],[11,7],[2,10],[4,10]],
 }
 
 function HeroNetwork({ visual }: { visual: HeroVisual }) {
@@ -40,11 +48,17 @@ function HeroNetwork({ visual }: { visual: HeroVisual }) {
         const rect = event.currentTarget.getBoundingClientRect()
         setPos({ x: ((event.clientX - rect.left) / rect.width) * 100, y: ((event.clientY - rect.top) / rect.height) * 100 })
       }}
-      style={{ '--mx': pos.x, '--my': pos.y } as CSSProperties}
+      style={{ '--mx': pos.x, '--my': pos.y } as NetworkStyle}
     >
       <svg viewBox="0 0 100 100">
         {visualLines[visual].map(([from, to]) => <line key={`${from}-${to}`} x1={points[from][0]} y1={points[from][1]} x2={points[to][0]} y2={points[to][1]} />)}
-        {points.map(([x, y], index) => <circle className="network-node" cx={x} cy={y} key={`${x}-${y}`} r={index % 3 === 0 ? 2.4 : 1.9} style={{ '--pull': 0.045 + (index % 5) * 0.018, '--delay': `${index * 90}ms` } as CSSProperties} />)}
+        {points.map(([x, y], index) => {
+          const distance = Math.hypot(pos.x - x, pos.y - y)
+          const influence = Math.max(0, 1 - distance / 24)
+          const dx = `${(pos.x - x) * influence * 0.16}px`
+          const dy = `${(pos.y - y) * influence * 0.16}px`
+          return <circle className="network-node" cx={x} cy={y} key={`${x}-${y}`} r={index % 4 === 0 ? 2.25 : 1.65} style={{ '--dx': dx, '--dy': dy, '--delay': `${index * 70}ms` } as NetworkStyle} />
+        })}
       </svg>
     </div>
   )
@@ -69,10 +83,9 @@ export function Card({ title, text, icon = 'check' }: { title: string; text: str
   return <article className="card hover-card"><Icon name={icon} /><h3>{title}</h3><p>{text}</p></article>
 }
 
-export function FlipCard({ label, title, text, icon, points, href, cta }: { label: string; title: string; text: string; icon: string; points: string[]; href: string; cta: string }) {
-  const [flipped, setFlipped] = useState(false)
+export function FlipCard({ label, title, text, icon, points, href }: { label: string; title: string; text: string; icon: string; points: string[]; href: string; cta: string }) {
   return (
-    <article className={`card flip-card ${flipped ? 'is-flipped' : ''}`}><div className="flip-inner"><div className="card-face card-front"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><p>{text}</p><button aria-label="Weitere Punkte anzeigen" className="flip-toggle" onClick={() => setFlipped(true)} type="button"><span>Mehr</span><strong>+</strong></button></div><div className="card-face card-back"><div className="back-title">Kurz & konkret</div><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul><div className="card-cta"><Link className="btn btn-primary" href={href}>{cta}</Link></div><button aria-label="Zurück zur Vorderseite" className="flip-close" onClick={() => setFlipped(false)} type="button">Schliessen</button></div></div></article>
+    <article className="card flip-card"><div className="flip-inner"><div className="card-face card-front"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><p>{text}</p><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div><div className="card-face card-back"><div className="back-title">Kurz & konkret</div><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul><div className="card-cta"><Link className="btn btn-primary" href={href}>Zum Angebot</Link></div></div></div></article>
   )
 }
 
