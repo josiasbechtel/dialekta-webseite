@@ -1,5 +1,1 @@
-import Link from 'next/link'
-
-export default function AutomatisierungPage() {
-  return <main className="page"><section className="hero compact"><div className="container"><p className="eyebrow">Digitale Arbeitshelfer</p><h1>Digitale Helfer, die wiederkehrende Aufgaben einfacher machen.</h1><p className="lead">Für Betriebe, Teams und Vereine, die mit Anfragen, Listen, Kursen, Freigaben oder Übersichten weniger Aufwand haben möchten.</p><div className="actions"><Link className="button light" href="/kontakt">Digitale Lösung besprechen</Link><Link className="button ghost" href="/">Zur Startseite</Link></div></div></section><section className="section"><div className="container card-grid"><article className="card"><h3>Anfrageverwaltung</h3><p>Anfragen sammeln, sortieren und nachvollziehbar bearbeiten.</p></article><article className="card"><h3>Kundenübersicht</h3><p>Wichtige Kundendaten und Notizen zentral verfügbar machen.</p></article><article className="card"><h3>Freigabeprozess</h3><p>Anfragen, Entscheidungen und Zuständigkeiten klar abbilden.</p></article></div></section></main>
-}
+export { default } from '../digitale-arbeitshelfer/page'
