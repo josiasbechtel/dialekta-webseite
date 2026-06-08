@@ -1,0 +1,5 @@
+import Link from 'next/link'
+
+export default function TelefonagentPage() {
+  return <main className="page"><section className="hero compact"><div className="container"><p className="eyebrow">KI-Telefonagent</p><h1>Nie wieder einen Anruf verpassen!</h1><p className="lead">Dein KI-Assistent übernimmt Telefonate rund um die Uhr, versteht Schweizerdeutsch und spricht über 30 Sprachen.</p><div className="actions"><Link className="button light" href="/kontakt">Analysegespräch sichern</Link><a className="button ghost" href="tel:+41615391929">Demoagent anrufen</a></div></div></section><section className="section"><div className="container card-grid"><article className="card"><h3>24/7 erreichbar</h3><p>Dein Betrieb bleibt auch ausserhalb der Öffnungszeiten erreichbar.</p></article><article className="card featured"><h3>Mehrsprachig</h3><p>Schweizerdeutsch und über 30 Sprachen für natürliche Gespräche.</p></article><article className="card"><h3>Ohne Hardware</h3><p>Einfach über Rufumleitung mit deiner bestehenden Telefonnummer nutzbar.</p></article></div></section></main>
+}
