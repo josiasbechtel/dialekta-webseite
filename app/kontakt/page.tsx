@@ -1,3 +1,1 @@
-export default function KontaktPage() {
-  return <main className="page"><section className="hero compact"><div className="container"><p className="eyebrow">Analysegespräch</p><h1>Finde heraus, was dich am meisten entlastet.</h1><p className="lead">Schreib uns kurz, wo du stehst. Eine grobe Idee oder ein konkretes Problem reicht für den Start.</p></div></section><section className="section"><div className="container split"><div><h2>Kontakt</h2><p className="section-lead">Gemeinsam klären wir, ob eine KI-Schulung, ein KI-Telefonagent oder ein digitaler Helfer aktuell den grössten Nutzen bringt.</p></div><form className="card" action="mailto:info@dialekta.ch" method="post"><p><strong>E-Mail:</strong> info@dialekta.ch</p><p><strong>Demoagent:</strong> +41 61 539 19 29</p><button className="button" type="submit">Anfrage senden</button></form></div></section></main>
-}
+export { default } from '../analysegespraech/page'
