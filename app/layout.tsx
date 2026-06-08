@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import './globals.css'
 import './refinements.css'
+import './final-touches.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dialekta.ch'),
