@@ -36,28 +36,57 @@ const visualLines: Record<HeroVisual, [number, number][]> = {
   faq: [[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,0],[1,9],[9,10],[10,5],[9,11],[11,7],[2,10],[4,10]],
 }
 
+function HeroDetailVisual({ visual }: { visual: HeroVisual }) {
+  const labels = visual === 'phone'
+    ? ['24/7', 'Gespräch', 'Weiterleitung', 'CRM']
+    : visual === 'school'
+      ? ['Lernen', 'Praxis', 'Team', 'Transfer']
+      : ['Anfrage', 'Prüfen', 'Automatisieren', 'Erledigt']
+
+  return (
+    <div className="visual-stage">
+      <div className="visual-grid" />
+      <div className="visual-device">
+        <span className="device-speaker" />
+        <span className="device-call" />
+        <span className="device-wave" />
+        <span className="device-dot device-dot-a" />
+        <span className="device-dot device-dot-b" />
+      </div>
+      <div className="visual-panel visual-panel-a"><span>{labels[0]}</span><strong>{labels[1]}</strong><i /></div>
+      <div className="visual-panel visual-panel-b"><span>{labels[2]}</span><strong>{labels[3]}</strong><i /></div>
+      <div className="visual-chip visual-chip-a">KI</div>
+      <div className="visual-chip visual-chip-b">✓</div>
+      <div className="visual-circuit visual-circuit-a" />
+      <div className="visual-circuit visual-circuit-b" />
+      <div className="visual-circuit visual-circuit-c" />
+    </div>
+  )
+}
+
 function HeroNetwork({ visual }: { visual: HeroVisual }) {
-  const [pos, setPos] = useState({ x: 50, y: 50 })
+  const [pos, setPos] = useState({ x: 64, y: 48 })
   const points = visualPoints[visual]
   return (
     <div
       aria-hidden="true"
       className={`hero-visual hero-visual-${visual}`}
-      onMouseLeave={() => setPos({ x: 50, y: 50 })}
+      onMouseLeave={() => setPos({ x: 64, y: 48 })}
       onMouseMove={(event) => {
         const rect = event.currentTarget.getBoundingClientRect()
         setPos({ x: ((event.clientX - rect.left) / rect.width) * 100, y: ((event.clientY - rect.top) / rect.height) * 100 })
       }}
       style={{ '--mx': pos.x, '--my': pos.y } as NetworkStyle}
     >
+      <HeroDetailVisual visual={visual} />
       <svg viewBox="0 0 100 100">
         {visualLines[visual].map(([from, to]) => <line key={`${from}-${to}`} x1={points[from][0]} y1={points[from][1]} x2={points[to][0]} y2={points[to][1]} />)}
         {points.map(([x, y], index) => {
           const distance = Math.hypot(pos.x - x, pos.y - y)
-          const influence = Math.max(0, 1 - distance / 24)
-          const dx = `${(pos.x - x) * influence * 0.16}px`
-          const dy = `${(pos.y - y) * influence * 0.16}px`
-          return <circle className="network-node" cx={x} cy={y} key={`${x}-${y}`} r={index % 4 === 0 ? 2.25 : 1.65} style={{ '--dx': dx, '--dy': dy, '--delay': `${index * 70}ms` } as NetworkStyle} />
+          const influence = Math.max(0, 1 - distance / 18)
+          const dx = `${(pos.x - x) * influence * 0.12}px`
+          const dy = `${(pos.y - y) * influence * 0.12}px`
+          return <circle className={`network-node ${influence > 0.2 ? 'is-near' : ''}`} cx={x} cy={y} key={`${x}-${y}`} r={index % 4 === 0 ? 2.25 : 1.65} style={{ '--dx': dx, '--dy': dy, '--delay': `${index * 70}ms` } as NetworkStyle} />
         })}
       </svg>
     </div>
@@ -85,7 +114,7 @@ export function Card({ title, text, icon = 'check' }: { title: string; text: str
 
 export function FlipCard({ label, title, text, icon, points, href }: { label: string; title: string; text: string; icon: string; points: string[]; href: string; cta: string }) {
   return (
-    <article className="card flip-card"><div className="flip-inner"><div className="card-face card-front"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><p>{text}</p><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div><div className="card-face card-back"><div className="back-title">Kurz & konkret</div><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul><div className="card-cta"><Link className="btn btn-primary" href={href}>Zum Angebot</Link></div></div></div></article>
+    <article className="card flip-card"><div className="flip-inner"><div className="card-face card-front"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><p>{text}</p><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div><div className="card-face card-back"><div className="back-title">Kurz & konkret</div><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div></div></article>
   )
 }
 
