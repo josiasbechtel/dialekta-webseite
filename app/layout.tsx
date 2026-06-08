@@ -4,9 +4,12 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dialekta.ch'),
-  title: 'Dialekta | KI verstehen, einsetzen und entlasten',
+  title: {
+    default: 'Dialekta | KI nutzen. Alltag entlasten.',
+    template: '%s | Dialekta',
+  },
   description:
-    'Dialekta unterstützt mit KI-Schulungen, KI-Telefonagenten und digitalen Arbeitshelfern für KMU, Teams, Vereine und Selbstständige.',
+    'Dialekta macht KI praxisnah nutzbar - mit Schulungen, Telefonagenten und digitalen Helfern.',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
