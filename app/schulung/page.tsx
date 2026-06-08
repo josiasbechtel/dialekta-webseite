@@ -1,0 +1,5 @@
+import Link from 'next/link'
+
+export default function SchulungPage() {
+  return <main className="page"><section className="hero compact"><div className="container"><p className="eyebrow">KI-Schulung</p><h1>KI ist überall. Aber was bringt sie dir wirklich?</h1><p className="lead">Unsere Live-Schulung zeigt dir verständlich, wie du KI sicher und sinnvoll nutzt - ganz ohne technisches Vorwissen.</p><div className="actions"><Link className="button light" href="/kontakt">Analysegespräch sichern</Link><Link className="button ghost" href="/">Zur Startseite</Link></div></div></section><section className="section"><div className="container card-grid"><article className="card"><h3>Verstehen</h3><p>Du verstehst, was KI ist, was sie kann und wo ihre Grenzen liegen.</p></article><article className="card"><h3>Ausprobieren</h3><p>Du testest Anwendungen für Text, Bild, Recherche, Planung und Organisation.</p></article><article className="card"><h3>Sicher nutzen</h3><p>Datenschutz, Faktencheck und sensible Daten werden verständlich eingeordnet.</p></article></div></section></main>
+}
