@@ -114,7 +114,7 @@ export function Card({ title, text, icon = 'check' }: { title: string; text: str
 
 export function FlipCard({ label, title, text, icon, points, href }: { label: string; title: string; text: string; icon: string; points: string[]; href: string; cta: string }) {
   return (
-    <article className="card flip-card"><div className="flip-inner"><div className="card-face card-front"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><p>{text}</p><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div><div className="card-face card-back"><div className="back-title">Kurz & konkret</div><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div></div></article>
+    <article className="card flip-card"><div className="flip-inner"><div className="card-face card-front"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><p>{text}</p><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div><div className="card-face card-back"><Icon name={icon} /><span className="mini-label">{label}</span><h3>{title}</h3><ul>{points.map((point) => <li key={point}>{point}</li>)}</ul><div className="card-cta"><Link className="btn btn-gradient" href={href}>Zum Angebot</Link></div></div></div></article>
   )
 }
 

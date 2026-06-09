@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   },
   description:
     'Dialekta macht KI praxisnah nutzbar - mit Schulungen, Telefonagenten und digitalen Helfern.',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
