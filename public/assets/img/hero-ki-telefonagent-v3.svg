@@ -1,1 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 658" preserveAspectRatio="xMidYMid slice"><image href="data:image/avif;base64,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" x="0" y="0" width="1536" height="658" preserveAspectRatio="xMidYMid slice"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 658" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Dialekta Hero Illustration">
+
+  <defs>
+    <linearGradient id="bg-phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#001D2E"/>
+      <stop offset=".48" stop-color="#003E5A"/>
+      <stop offset="1" stop-color="#006D79"/>
+    </linearGradient>
+    <radialGradient id="halo-phone" cx="74%" cy="45%" r="50%">
+      <stop offset="0" stop-color="#00D6D4" stop-opacity=".72"/>
+      <stop offset=".34" stop-color="#00D6D4" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#001D2E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke-phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".88"/>
+      <stop offset=".42" stop-color="#00D6D4" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#009AA5" stop-opacity=".92"/>
+    </linearGradient>
+    <linearGradient id="panel-phone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#00D6D4" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="glow-phone" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 .84  0 0 0 0 .83  0 0 0 .7 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft-phone" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#001D2E" flood-opacity=".35"/>
+    </filter>
+  </defs>
+<rect width="1536" height="658" fill="url(#bg-phone)"/>
+<rect width="1536" height="658" fill="url(#halo-phone)"/>
+<path d="M640 0h896v658H520c130-150 164-376 120-658z" fill="#00D6D4" opacity=".05"/>
+<g opacity=".22" stroke="#00D6D4" stroke-width="1">
+  <path d="M760 0v658"/><path d="M816 0v658"/><path d="M872 0v658"/><path d="M928 0v658"/><path d="M984 0v658"/><path d="M1040 0v658"/><path d="M1096 0v658"/><path d="M1152 0v658"/><path d="M1208 0v658"/><path d="M1264 0v658"/><path d="M1320 0v658"/><path d="M1376 0v658"/><path d="M1432 0v658"/><path d="M1488 0v658"/>
+  <path d="M620 86h916"/><path d="M620 164h916"/><path d="M620 242h916"/><path d="M620 320h916"/><path d="M620 398h916"/><path d="M620 476h916"/><path d="M620 554h916"/>
+</g>
+<g transform="translate(720 54)">
+
+<g transform="translate(58 8)">
+  <circle cx="400" cy="290" r="238" fill="#00D6D4" opacity=".08"/>
+  <rect x="306" y="44" width="254" height="500" rx="46" fill="#003E5A" stroke="url(#stroke-phone)" stroke-width="5" filter="url(#soft-phone)"/>
+  <rect x="332" y="88" width="202" height="396" rx="30" fill="#002b40" stroke="#00D6D4" stroke-width="2" opacity=".96"/>
+  <path d="M394 74h70" stroke="#00D6D4" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="432" cy="284" r="86" fill="#00D6D4" opacity=".12" stroke="url(#stroke-phone)" stroke-width="4"/>
+  <path d="M394 274c26 62 78 62 104 0" fill="none" stroke="#00D6D4" stroke-width="13" stroke-linecap="round" filter="url(#glow-phone)"/>
+  <path d="M374 218c28-28 82-28 110 0M354 186c46-50 128-50 174 0" fill="none" stroke="url(#stroke-phone)" stroke-width="9" stroke-linecap="round" opacity=".9"/>
+  <path d="M375 414h116" stroke="#00D6D4" stroke-width="12" stroke-linecap="round"/>
+  <g transform="translate(38 108)" filter="url(#soft-phone)">
+    <rect width="214" height="98" rx="22" fill="url(#panel-phone)" stroke="url(#stroke-phone)" stroke-width="2"/>
+    <path d="M26 72H188" stroke="#00D6D4" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+    <circle cx="28" cy="28" r="8" fill="#00D6D4" filter="url(#glow-phone)"/>
+    <text x="48" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">24/7</text>
+  </g><g transform="translate(584 178)" filter="url(#soft-phone)">
+    <rect width="204" height="98" rx="22" fill="url(#panel-phone)" stroke="url(#stroke-phone)" stroke-width="2"/>
+    <path d="M26 72H178" stroke="#00D6D4" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+    <circle cx="28" cy="28" r="8" fill="#00D6D4" filter="url(#glow-phone)"/>
+    <text x="48" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">Anruf</text>
+  </g><g transform="translate(62 392)" filter="url(#soft-phone)">
+    <rect width="228" height="98" rx="22" fill="url(#panel-phone)" stroke="url(#stroke-phone)" stroke-width="2"/>
+    <path d="M26 72H202" stroke="#00D6D4" stroke-width="5" stroke-linecap="round" opacity=".82"/>
+    <circle cx="28" cy="28" r="8" fill="#00D6D4" filter="url(#glow-phone)"/>
+    <text x="48" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">KI Agent</text>
+  </g>
+  <g><path d="M128 300L226 246" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><path d="M226 246L584 316" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><path d="M584 316L680 250" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><path d="M584 316L670 430" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><path d="M670 430L544 500" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><path d="M544 500L214 514" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><path d="M214 514L128 300" stroke="url(#stroke-phone)" stroke-width="3" opacity=".52" stroke-linecap="round"/><circle cx="128" cy="300" r="7" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="128" cy="300" r="3" fill="#FFFFFF" opacity=".88"/><circle cx="226" cy="246" r="6" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="226" cy="246" r="2" fill="#FFFFFF" opacity=".88"/><circle cx="584" cy="316" r="8" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="584" cy="316" r="4" fill="#FFFFFF" opacity=".88"/><circle cx="680" cy="250" r="7" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="680" cy="250" r="3" fill="#FFFFFF" opacity=".88"/><circle cx="670" cy="430" r="7" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="670" cy="430" r="3" fill="#FFFFFF" opacity=".88"/><circle cx="544" cy="500" r="8" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="544" cy="500" r="4" fill="#FFFFFF" opacity=".88"/><circle cx="214" cy="514" r="7" fill="#00D6D4" filter="url(#glow-phone)"/><circle cx="214" cy="514" r="3" fill="#FFFFFF" opacity=".88"/></g>
+</g>
+</g>
+</svg>
