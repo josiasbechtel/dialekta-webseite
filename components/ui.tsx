@@ -93,11 +93,11 @@ function HeroNetwork({ visual }: { visual: HeroVisual }) {
   )
 }
 
-export function Hero({ title, lead, image, actions, points = [], home, visual = 'home' }: { title: ReactNode; lead: string; image: string; actions: { href: string; label: string; outline?: boolean }[]; points?: string[]; home?: boolean; visual?: HeroVisual }) {
+export function Hero({ title, lead, image, actions, home, visual = 'home' }: { title: ReactNode; lead: string; image: string; actions: { href: string; label: string; outline?: boolean }[]; points?: string[]; home?: boolean; visual?: HeroVisual }) {
   return (
     <section className={`hero ${home ? 'home-hero' : ''}`} style={{ '--hero-bg-image': `url(${image})`, '--hero-real-image': `url(${image})` } as CSSProperties}>
       <div className="container hero-layout">
-        <div className="hero-copy"><h1>{title}</h1><div aria-hidden="true" className="accent-line" /><p className="lead">{lead}</p><div className="hero-actions">{actions.map((action, index) => <Link className={`btn ${action.outline ? 'btn-outline-light' : 'btn-primary'}`} href={action.href} key={action.href + index}>{action.label}</Link>)}</div>{points.length ? <div className="hero-points">{points.map((point) => <span className="pill" key={point}>{point}</span>)}</div> : null}</div>
+        <div className="hero-copy"><h1>{title}</h1><div aria-hidden="true" className="accent-line" /><p className="lead">{lead}</p><div className="hero-actions">{actions.map((action, index) => <Link className={`btn ${action.outline ? 'btn-outline-light' : 'btn-primary'}`} href={action.href} key={action.href + index}>{action.label}</Link>)}</div></div>
         <HeroNetwork visual={visual} />
       </div>
     </section>
